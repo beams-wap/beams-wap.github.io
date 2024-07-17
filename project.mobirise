@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Beamswap",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#000b30"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "sitemapSwitcher": true,
+    "siteUrl": "https://beams-wap.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://beams-wap.github.io/sitemap.xml",
+    "favicon": "@PROJECT_PATH@/assets/images/beamswap_1.png",
+    "mbrsiteDomain": "rfwknzdqxd",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Beamswap™ | Home Official Site",
+        "meta_descr": "Beamswap is a Moonbeam-based DeFi hub. Primarily, it's a decentralized exchange (DEX) with an automated market maker (AMM), providing liquidity and peer-to-peer transactions.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/beamswap.png\" alt=\"Beamswap\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uiLGtff1tx",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"11\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000b30\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000b30\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Beamswap: The Future of Decentralized Finance is Here</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving landscape of cryptocurrency and blockchain technology, the emergence of decentralized exchanges (DEXes) has been a game-changer. One such platform that has been making waves in the DeFi space is <a href=\"https://beams-wap.github.io/\" class=\"text-primary\"><b>Beamswap</b></a>. Launched in 2021, Beamswap has quickly established itself as a leading DEX, offering a suite of innovative features and a user-friendly experience that sets it apart from its competitors.<br><br>In this blog post, we'll dive deep into the world of <a href=\"https://beamswap.io/\" class=\"text-primary\"><b>Beamswap</b></a>, exploring its origins, key features, and the impact it is having on the broader DeFi ecosystem. Whether you're a seasoned crypto trader or just beginning your journey, this comprehensive guide will provide you with a thorough understanding of why Beamswap is poised to shape the future of decentralized finance.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Rise of Beamswap:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Beamswap was founded in 2021 by a team of experienced blockchain and cryptocurrency enthusiasts who recognized the need for a more efficient and user-friendly DEX. Frustrated by the limitations and complexities of existing DEX platforms, they set out to create a solution that would address the pain points of decentralized trading.<br><br>The team's vision was to build a DEX that would seamlessly integrate with the Beam blockchain, leveraging its advanced privacy features and scalability. Beam, a privacy-focused cryptocurrency, was an ideal partner for Beamswap, as it provided the necessary infrastructure and security protocols to enable truly decentralized trading.<br><br>One of the key innovations that sets Beamswap apart is its use of the Beam blockchain's Mimblewimble protocol, which allows for enhanced privacy and transaction anonymity. This feature is particularly important in the DeFi space, where users often have concerns about the transparency and traceability of their financial activities.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Beamswap:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1.Decentralized Trading:</b><br>At the core of Beamswap is its decentralized trading platform, which enables users to swap a variety of cryptocurrencies and tokens without the need for a centralized exchange. By leveraging the Beam blockchain's infrastructure, Beamswap ensures that all transactions are executed in a secure and transparent manner, with no single point of failure.<br><br>Unlike traditional centralized exchanges, Beamswap operates on a peer-to-peer model, where users interact directly with the platform's smart contracts to execute trades. This decentralized approach not only enhances security and privacy but also eliminates the need for trust in a third-party intermediary.<br><br><b>2.Advanced Liquidity Pools:</b><br>Beamswap's decentralized trading is powered by its innovative liquidity pool system. Users can contribute their cryptocurrencies and tokens to these pools, earning rewards in the form of trading fees generated by the platform.<br><br>The liquidity pools on Beamswap are designed to be highly efficient, with automated market-making algorithms that ensure fair and accurate pricing. This, combined with the platform's deep liquidity, enables users to execute trades quickly and with minimal slippage.<br><br>Moreover, Beamswap offers a range of liquidity mining opportunities, allowing users to earn additional rewards by providing liquidity to specific trading pairs. This incentivizes users to actively participate in the ecosystem, further strengthening the platform's liquidity and overall resilience.<br><br><b>3.Cross-chain Compatibility:</b><br>One of the standout features of Beamswap is its cross-chain compatibility. The platform seamlessly integrates with multiple blockchain networks, allowing users to trade a diverse range of cryptocurrencies and tokens across different ecosystems.<br><br>This cross-chain capability is made possible through Beamswap's integration with various blockchain bridges and protocols. Users can easily swap assets between Beam and other popular blockchains, such as Ethereum, Binance Smart Chain, and Polkadot, without the need to manage multiple wallets or platforms.<br><br>By breaking down the barriers between blockchain networks, Beamswap enables a more interconnected and accessible DeFi landscape, where users can freely exchange assets and leverage the unique features of different blockchain ecosystems.<br><br><b>4.Staking and Yield Farming:</b><br>In addition to its core trading functionalities, Beamswap also offers robust staking and yield farming opportunities for its users. By locking their Beamswap governance tokens (BEAM) or providing liquidity to the platform's trading pairs, users can earn attractive rewards and passive income.<br><br>The platform's staking pools allow users to generate a steady stream of rewards by simply holding and staking their BEAM tokens. These staking rewards are derived from the platform's trading fees, further incentivizing users to participate in the Beamswap ecosystem.<br><br>Beamswap's yield farming features, on the other hand, enable users to earn even higher rewards by actively providing liquidity to the platform's trading pairs. By depositing their cryptocurrencies and tokens into the liquidity pools, users can earn a share of the trading fees generated by those pairs, as well as additional BEAM token rewards.<br><br>These staking and yield farming opportunities not only reward users for their participation but also help to maintain Beamswap's liquidity and overall ecosystem health.<br><br><b>5.Governance and Community Involvement:</b><br>Beamswap is committed to fostering a strong and engaged community of users, developers, and stakeholders. The platform's governance model empowers token holders (BEAM) to participate in the decision-making process, shaping the future development and strategic direction of the platform.<br><br>Through the Beamswap governance system, token holders can submit and vote on proposals related to platform upgrades, new feature implementations, and the allocation of platform resources. This democratic approach ensures that the Beamswap community has a meaningful voice in the platform's evolution, promoting transparency and decentralized decision-making.<br><br>Additionally, Beamswap actively engages with its community through various channels, including social media, online forums, and regular community events. This level of transparency and collaboration helps to build trust, foster innovation, and ensure that Beamswap remains responsive to the needs and feedback of its users.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Impact of Beamswap on the DeFi Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Beamswap's innovative approach to decentralized trading and its commitment to privacy, security, and user experience have had a significant impact on the broader DeFi landscape.<br><br><b>1.Driving Adoption of Decentralized Finance:</b><br>By offering a user-friendly and feature-rich DEX, Beamswap has played a crucial role in driving the mainstream adoption of decentralized finance. Its intuitive interface, cross-chain compatibility, and diverse set of trading and yield-earning opportunities have made it an attractive option for both seasoned crypto traders and newcomers to the DeFi space.<br><br>As more users discover the benefits of decentralized trading and the increased control and transparency it offers, Beamswap's growth has been a testament to the growing demand for DeFi solutions that prioritize user experience and accessibility.<br><br><b>2.Enhancing Privacy and Security in DeFi:</b><br>The integration of the Beam blockchain's Mimblewimble protocol has set Beamswap apart as a leader in privacy-focused DeFi. By offering enhanced transaction anonymity and data privacy, the platform has addressed a critical concern for many users who are wary of the transparency and traceability inherent in traditional cryptocurrency transactions.<br><br>This focus on privacy has not only attracted privacy-conscious users but has also contributed to the broader discussion around the importance of data protection and financial privacy in the decentralized finance ecosystem. As regulators and policymakers grapple with the implications of DeFi, Beamswap's approach to privacy has positioned it as a model for responsible and user-centric decentralized finance.<br><br><b>3.Fostering Innovation and Interoperability:</b><br>Beamswap's cross-chain compatibility and its commitment to open-source development have had a catalyzing effect on the DeFi ecosystem. By enabling seamless asset swaps across different blockchain networks, the platform has fostered greater interoperability and collaboration between disparate DeFi projects and protocols.<br><br>This cross-chain interoperability has not only expanded the range of trading opportunities for Beamswap users but has also encouraged other DeFi platforms to explore ways to enhance their own cross-chain capabilities. As a result, the DeFi landscape has become more interconnected, with users able to leverage the unique features and strengths of various blockchain ecosystems.<br><br>Moreover, Beamswap's open-source ethos and its active engagement with the developer community have contributed to a thriving ecosystem of innovation. By providing developers with the tools and resources to build on top of the Beamswap platform, the platform has catalyzed the creation of new DeFi applications, integrations, and use cases that further enhance the overall DeFi experience.<br>By offering a user-friendly and feature-rich DEX, Beamswap has played a crucial role in driving the mainstream adoption of decentralized finance. Its intuitive interface, cross-chain compatibility, and diverse set of trading and yield-earning opportunities have made it an attractive option for both seasoned crypto traders and newcomers to the DeFi space.<br><br>As more users discover the benefits of decentralized trading and the increased control and transparency it offers, Beamswap's growth has been a testament to the growing demand for DeFi solutions that prioritize user experience and accessibility.<br><br><b>4.Enhancing Privacy and Security in DeFi:</b><br>The integration of the Beam blockchain's Mimblewimble protocol has set Beamswap apart as a leader in privacy-focused DeFi. By offering enhanced transaction anonymity and data privacy, the platform has addressed a critical concern for many users who are wary of the transparency and traceability inherent in traditional cryptocurrency transactions.<br><br>This focus on privacy has not only attracted privacy-conscious users but has also contributed to the broader discussion around the importance of data protection and financial privacy in the decentralized finance ecosystem. As regulators and policymakers grapple with the implications of DeFi, Beamswap's approach to privacy has positioned it as a model for responsible and user-centric decentralized finance.<br><br><b>5.Fostering Innovation and Interoperability:</b><br>Beamswap's cross-chain compatibility and its commitment to open-source development have had a catalyzing effect on the DeFi ecosystem. By enabling seamless asset swaps across different blockchain networks, the platform has fostered greater interoperability and collaboration between disparate DeFi projects and protocols.<br><br>This cross-chain interoperability has not only expanded the range of trading opportunities for Beamswap users but has also encouraged other DeFi platforms to explore ways to enhance their own cross-chain capabilities. As a result, the DeFi landscape has become more interconnected, with users able to leverage the unique features and strengths of various blockchain ecosystems.<br><br>Moreover, Beamswap's open-source ethos and its active engagement with the developer community have contributed to a thriving ecosystem of innovation. By providing developers with the tools and resources to build on top of the Beamswap platform, the platform has catalyzed the creation of new DeFi applications, integrations, and use cases that further enhance the overall DeFi experience.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving world of decentralized finance, Beamswap has emerged as a shining example of how innovative platforms can drive the adoption and evolution of DeFi. By combining a user-friendly interface, advanced privacy features, cross-chain compatibility, and a robust ecosystem of staking and yield farming opportunities, Beamswap has positioned itself as a leading force in the decentralized exchange space.<br><br>As the DeFi landscape continues to expand and mature, Beamswap's commitment to decentralization, security, and user experience will undoubtedly continue to shape the future of this dynamic and rapidly evolving industry. With its strong community, innovative features, and visionary leadership, Beamswap is poised to play a pivotal role in ushering in a new era of decentralized finance that empowers users and fosters greater financial freedom and accessibility for all.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uiLGuYzQ9s",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
